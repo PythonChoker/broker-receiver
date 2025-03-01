@@ -59,8 +59,7 @@ to distribute it, including any media attached thereto.
 
 The project utilizes [RabbitMQ](https://www.rabbitmq.com/) for message distribution.
 
-The project consists of a receiver microservice to encode initial text and attachments into JSON
-and a dispatcher microservice to push the message into project-related queues for further processing:
+The project consists of a receiver microservice to JSON-encode the initial text and attachments, and a dispatcher microservice to push the message into the project-related queues for further processing:
 
 ```
                                               --> endpoint microservice #1
@@ -78,7 +77,7 @@ required in case if such channel is used extensively.
 
 Other microservices:
 
-- [Receiver]()
-- [Dispatcher]()
-- [SMTP BZ Sender]()
-- [Telegram Sender]()
+- [Receiver](https://github.com/PythonChoker/broker-receiver)
+- [Dispatcher](https://github.com/PythonChoker/broker-dispatcher)
+- [SMTP BZ Sender](https://github.com/PythonChoker/broker-smtp-bz)
+- [Telegram Sender](https://github.com/PythonChoker/broker-telegram)
